@@ -13,7 +13,7 @@ from random import randint
 
 def generate_addition_problem():
     first = randint(1,10)
-    first = randint(1,10)
+    second = randint(1,10)
     problem_string = '{}+{}'.format(first, second)
     return problem_string
 ```
