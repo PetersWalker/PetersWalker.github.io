@@ -1,10 +1,11 @@
 # Personal Projects
-## Learncentive
-#### An automated, tutoring web application.  
-### **Technologies**
+## [Learncentive](https://github.com/PetersWalker/learncentive)
+An automated, tutoring web application.
+
+### Technologies
 Python, Flask, PosgreSQL, React
-### **Interesting Bits**
-Part of the challenge in writing this application is generating random numbers
+### Interesting Bits
+Part of the challenge in writing this application was generating random numbers
 for math problems in a time efficient way. A naive approach would be to invoke
 python's randint function every time an integer is needed for an arithmetic problem:
 ```python
@@ -36,3 +37,22 @@ def generate_addition_problem():
 Here the get_integers_from_cache function also increments the cache index
 
 # Curiosities
+## [Langdict](https://github.com/PetersWalker/langdict)
+Transforming lexicons into acyclic graphs.
+## Technologies
+Python, NetworkX
+## Background
+I was wondering what the minimum required vocabulary for a language is. As an
+english speaker if you want to learn a new word, you consult a dictionary like
+Merriam Webster and read out a definition. The definition is made up of words that
+you may or may not know the definition of themselves. You in turn must look up these
+other words until all definitions are resolved by the words in your current vocabulary.
+The natural implication is that there must be a set of words that are basic to the
+lexicon of a language, and which all other words can be defined by on one level or
+another.
+
+The model that works best to understand the properties of these words is a directed
+graph with each word being a node, and linked to the words that define it.
+
+In order to find those specific words that are fundamental to the vocabulary, we need
+to transformthis graph into an [acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph). The most fundamental words that can be used to construct all other definitions and will be at the beginning of this acyclic graph.
