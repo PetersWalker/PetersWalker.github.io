@@ -1,8 +1,9 @@
 ---
 ---
 
-@import "";
+@import "{{ site.theme }}";
+
 .page-header {
   text-align: center;
-  background-image: url("https://peterswalker.github.io/assets/mowgliandpete.jpg");
+  background-image: url("https://github.com/PetersWalker/PetersWalker.github.io/assets/mowgliandpete.jpg");
 }
