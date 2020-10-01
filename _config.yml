@@ -20,8 +20,8 @@
 
 theme: jekyll-theme-cayman
 title: [Pete Walker]
-description: [Programmer,,Musician,,Dog Dad]
-repository: 'https://github.com/PetersWalker'
+description: Programmer, Musician, Dog Dad
+github_profile: https://github.com/PetersWalker
 google_analytics: "UA-179414315-1"
 # Build settings
 plugins:
